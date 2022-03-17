@@ -1,8 +1,7 @@
-use std::fs::{self, metadata, read_to_string};
-
 use clap::{arg, command, Command};
 use colored::Colorize;
 use serde_derive::{Deserialize, Serialize};
+use std::fs::{self, metadata, read_to_string};
 use thiserror::Error;
 use time::OffsetDateTime;
 
