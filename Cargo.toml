@@ -1,0 +1,20 @@
+[package]
+name = "pile"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+clap = { version = "3.1.6", features = ["cargo"] }
+colored = "2.0.0"
+toml = "0.5"
+serde = "1.0.136"
+serde_derive = "1.0.136"
+anyhow = "1.0.56"
+dirs = "4.0.0"
+thiserror = "1.0"
+time = { version = "0.3.7", features = ["formatting", "local-offset"] }
+
+[[bin]]
+name = "pile"
+path = "./src/main.rs"
