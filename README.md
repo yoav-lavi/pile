@@ -10,3 +10,16 @@ Pile rules are a set of keywords that if present in the note body, the note will
 For example: if we have a note with the contents "use `retain()` to remove items from a vector", and a rule "programming" with the keywords "rust", "code", "cli" and "vector", the note above will match the rule. We can then search our notes by specifying the rule name "programming" and be able to query all matching notes.
 
 Pile saves all notes and rules as `.toml` files at `~/.pile`.
+
+## Commands
+
+```sh
+pile note <NAME> <CONTENT> - creates a new note
+pile rule <NAME> - 
+  -k --keyword <KEYWORD> - adds a keyword to the rule
+  -r --remove <KEYWORD> - removes a keyword from the rule (not implemented)
+  -d --delete - deletes the rule (not implemented)
+pile search <QUERY> - searches note names, contents and matching rules
+pile index - rematches all notes to rules
+pile delete <NAME> - deletes a note
+```
