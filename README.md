@@ -1,5 +1,9 @@
 # Pile
 
+
+https://user-images.githubusercontent.com/14347895/158874499-bd2c06d6-b922-423b-8134-1bfdf09b8fcc.mov
+
+
 Note: Pile is currently at POC stage
 
 Pile is a CLI for taking notes that allows you to organize and query your notes by defining rules.
@@ -21,5 +25,9 @@ pile rule <NAME> -
   -d --delete - deletes the rule (not implemented)
 pile search <QUERY> - searches note names, contents and matching rules
 pile index - rematches all notes to rules
-pile delete <NAME> - deletes a note
+pile delete <NAME> - deletes all notes with a specific name
 ```
+
+## Possible Future Features
+
+- [ ] Regex rules
