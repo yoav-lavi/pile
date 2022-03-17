@@ -25,7 +25,7 @@ pile rule <NAME> -
   -d --delete - deletes the rule (not implemented)
 pile search <QUERY> - searches note names, contents and matching rules
 pile index - rematches all notes to rules
-pile delete <NAME> - deletes a note
+pile delete <NAME> - deletes all notes with a specific name
 ```
 
 ## Possible Future Features
