@@ -31,3 +31,5 @@ pile delete <NAME> - deletes all notes with a specific name
 ## Possible Future Features
 
 - [ ] Regex rules
+- [ ] Reminders
+- [ ] Automatic remind rules
