@@ -1,9 +1,8 @@
-use std::fs;
-
 use crate::{
     index::index_notes,
     types::{NoteFile, Rule, RuleFile, RuleKind},
 };
+use std::fs::write;
 
 pub fn matching_rules(contents: &str, rule_file: &RuleFile) -> Vec<String> {
     rule_file
@@ -57,7 +56,7 @@ pub fn create_rule(
     }
 
     let rules_file_content = toml::to_string(&rule_file)?;
-    fs::write(rules_path, rules_file_content)?;
+    write(rules_path, rules_file_content)?;
 
     index_notes(note_file, rule_file, notes_path)?;
 

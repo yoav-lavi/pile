@@ -11,7 +11,7 @@ use index::index_notes;
 use note::create_note;
 use rule::create_rule;
 use search::search_notes;
-use std::fs::{self, metadata, read_to_string};
+use std::fs::{create_dir, metadata, read_to_string};
 use types::{NoteFile, PileError, RuleFile};
 
 fn main() -> anyhow::Result<()> {
@@ -42,7 +42,7 @@ fn main() -> anyhow::Result<()> {
     let root = &format!("{}/.pile", home);
 
     if metadata(root).is_err() {
-        fs::create_dir(root)?;
+        create_dir(root)?;
     }
 
     let rules_path = &format!("{root}/rules.toml");
